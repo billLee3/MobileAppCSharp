@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = CourseScheduleMaui
+build_property.ProjectDir = C:\Users\billl\OneDrive\Documents\WGU\CourseSchedule\CourseScheduleMaui\
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/AddAssessPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.AddAssessPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddAssessPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddAssessPage.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/AddCoursePage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.AddCoursePage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddCoursePage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddCoursePage.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/AddTermPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.AddTermPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AddTermPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AddTermPage.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/AllAssessPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.AllAssessPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AllAssessPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AllAssessPage.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/AllCourses.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.AllCourses.xaml
+build_metadata.AdditionalFiles.TargetPath = AllCourses.xaml
+build_metadata.AdditionalFiles.RelativePath = AllCourses.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/AssessmentDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.AssessmentDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = AssessmentDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = AssessmentDetailPage.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/CourseDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.CourseDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CourseDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CourseDetailPage.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/SMSPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.SMSPage.xaml
+build_metadata.AdditionalFiles.TargetPath = SMSPage.xaml
+build_metadata.AdditionalFiles.RelativePath = SMSPage.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/TemplateFileToCopy.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.TemplateFileToCopy.xaml
+build_metadata.AdditionalFiles.TargetPath = TemplateFileToCopy.xaml
+build_metadata.AdditionalFiles.RelativePath = TemplateFileToCopy.xaml
+
+[C:/Users/billl/OneDrive/Documents/WGU/CourseSchedule/CourseScheduleMaui/TermDetailPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = CourseScheduleMaui.TermDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = TermDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = TermDetailPage.xaml

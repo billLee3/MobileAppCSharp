@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CourseScheduleMaui.AddTermPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+            <Label Text="Add Term" FontSize="Body"/>
+            <Entry x:Name="TermNameEntry" Placeholder="Term Name"/>
+            <Label Text="Start Date"/>
+            <DatePicker x:Name="startDatePicker"/>
+            <Label Text="End Date"/>
+            <DatePicker x:Name="endDatePicker"/>
+            <Button x:Name="addTermButton" Text="Add Term" Clicked="addTermButton_Clicked"/>
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
