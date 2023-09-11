@@ -121,4 +121,8 @@
 	  </MauiXaml>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <Folder Include="Wireframe\" />
+	</ItemGroup>
+
 </Project>

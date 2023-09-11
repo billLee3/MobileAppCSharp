@@ -17,7 +17,9 @@ namespace CourseScheduleMaui
         {
             base.OnAppearing();
 
-            //createDataSet();
+
+            //PLEASE UNCOMMENT THE LINE BELOW TO STOP GENERATING DATA ON THE OPENING OF THE APP. 
+            createDataSet();
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
             {
@@ -104,7 +106,7 @@ namespace CourseScheduleMaui
 
         private void addTermButton_Clicked(object sender, EventArgs e)
         {
-            //Navigation.PushAsync(new AddTermPage());
+            Navigation.PushAsync(new AddTermPage());
         }
 
         private void allCourses_Clicked(object sender, EventArgs e)
