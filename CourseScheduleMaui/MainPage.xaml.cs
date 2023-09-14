@@ -7,19 +7,16 @@ namespace CourseScheduleMaui
     public partial class MainPage : ContentPage
     {
         int count = 0;
-
         public MainPage()
         {
             InitializeComponent();
         }
-
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
-
             //PLEASE UNCOMMENT THE LINE BELOW TO STOP GENERATING DATA ON THE OPENING OF THE APP. 
-            createDataSet();
+            //createDataSet();
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
             {
