@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CourseScheduleMaui.AssessmentDetailPage">
-
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
@@ -13,12 +12,9 @@
             <Entry x:Name="assessDescEntry" Placeholder="Description"/>
             <Entry x:Name="notes" Placeholder="Assessment notes"/>
             <DatePicker x:Name="dueDatePicker"/>
-
             <Button x:Name="sendNotes" Text="Send Notes" Clicked="sendNotes_Clicked"/>
             <Button x:Name="updateButton" Text="Update Assessment" Clicked="updateButton_Clicked"/>
             <Button x:Name="deleteButton" Text="Delete Assessment" Clicked="deleteButton_Clicked"/>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
