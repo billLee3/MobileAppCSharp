@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CourseScheduleMaui.CourseDetailPage">
-
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
@@ -22,7 +21,6 @@
             </Picker>
             <Entry x:Name="courseDetailsEntry"/>
             <Entry x:Name="notesEntry"/>
-
             <Label x:Name="AssessmentsLabel" Text="Course Assessments" FontSize="Body"/>
             <ListView x:Name="assessListView" 
                      ItemSelected="assessListView_ItemSelected"
@@ -33,12 +31,9 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
             <Button x:Name="sendNotesSMS" Text="Send Notes as SMS"/>
             <Button x:Name="updateCourseButton" Text="Update Course" Clicked="updateCourseButton_Clicked"/>
             <Button x:Name="deleteCourseButton" Text="Delete Course" Clicked="deleteCourseButton_Clicked"/>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

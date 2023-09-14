@@ -20,21 +20,13 @@
                     <x:String>Plan to Take</x:String>
                 </Picker.Items>
             </Picker>
-
-
             <Entry x:Name="detailsEntry" Placeholder="Details"/>
             <Entry x:Name="notesEntry" Placeholder="Notes" />
-
-
             <Label Text="Instructor Information" FontSize="Body"/>
             <Entry x:Name="instructorEntry" Placeholder="Instructor Name" />
             <Entry x:Name="instructorEmailEntry" Placeholder="Instructor Email"/>
             <Entry x:Name="instructorPhoneEntry" Placeholder="Instructor Phone Number"/>
-
-
             <Button x:Name="addCourseButton" Text="Add Course" Clicked="addCourseButton_Clicked"/>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
