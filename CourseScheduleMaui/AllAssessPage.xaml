@@ -12,7 +12,6 @@
             <ListView x:Name="assessListView" 
           ItemSelected="assessListView_ItemSelected"
           HorizontalOptions="Center">
-                
                 <ListView.ItemTemplate >
                     <DataTemplate>
                         <TextCell Text="{Binding AssessmentName}" TextColor="Black"/>
@@ -20,8 +19,6 @@
                 </ListView.ItemTemplate>
             </ListView>
             <Button x:Name="HomeButton" Text="Home" Clicked="HomeButton_Clicked"/>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
