@@ -2,7 +2,6 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CourseScheduleMaui.MainPage">
-
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
@@ -18,12 +17,10 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-
+            <Button x:Name="createData" Text="Create Dataset" Clicked="createData_Clicked"/>
             <Button x:Name="allCourses" Text="All Courses" Clicked="allCourses_Clicked"/>
             <Button x:Name="allAssess" Text="All Assessments" Clicked="allAssess_Clicked"/>
             <Button x:Name="addTermButton" Text="Add Term" Clicked="addTermButton_Clicked"/>
-
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>

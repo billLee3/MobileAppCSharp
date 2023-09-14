@@ -7,22 +7,33 @@ namespace CourseScheduleMaui
     public partial class MainPage : ContentPage
     {
         int count = 0;
+        bool emptyArray = true;
         public MainPage()
         {
             InitializeComponent();
         }
+
+        
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
-            //PLEASE UNCOMMENT THE LINE BELOW TO STOP GENERATING DATA ON THE OPENING OF THE APP. 
+
+            //CODE
+            //PLEASE UNCOMMENT THE LINE BELOW TO GENERATE DATA ON THE OPENING OF THE APP. 
             //createDataSet();
+               
+            
+            
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
             {
                 conn.CreateTable<Term>();
                 var terms = conn.Table<Term>().ToList();
+                
                 termListView.ItemsSource = terms;
+                
+                
             }
 
 
@@ -139,6 +150,12 @@ namespace CourseScheduleMaui
                 conn.Insert(pA);
 
             }
+        }
+
+        private void createData_Clicked(object sender, EventArgs e)
+        {
+            createDataSet();
+            Navigation.PushAsync(new MainPage());
         }
     }
 }
