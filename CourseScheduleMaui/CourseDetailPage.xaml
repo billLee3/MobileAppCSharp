@@ -2,15 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CourseScheduleMaui.CourseDetailPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Course Details">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
             <Label Text="Course Information" FontSize="Medium"/>
+            <Label Text="Course Name"/>
             <Entry x:Name="courseNameEntry" Placeholder="Course Name"/>
+            <Label Text="Start Date"/>
             <DatePicker x:Name="startDatePicker"/>
+            <Label Text="End Date"/>
             <DatePicker x:Name="endDatePicker"/>
+            <Label Text="Status"/>
             <Picker x:Name="courseStatusPicker" Title="Course Status" SelectedIndexChanged="courseStatusPicker_SelectedIndexChanged">
                 <Picker.Items>
                     <x:String>In progress</x:String>
@@ -19,7 +27,9 @@
                     <x:String>Plan to Take</x:String>
                 </Picker.Items>
             </Picker>
+            <Label Text="Details" />
             <Entry x:Name="courseDetailsEntry"/>
+            <Label Text="Notes"/>
             <Entry x:Name="notesEntry"/>
             <Label x:Name="AssessmentsLabel" Text="Course Assessments" FontSize="Body"/>
             <ListView x:Name="assessListView" 
@@ -31,7 +41,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Button x:Name="sendNotesSMS" Text="Send Notes as SMS"/>
+            <Button x:Name="sendNotesSMS" Text="Send Notes as SMS" Clicked="sendNotesSMS_Clicked"/>
             <Button x:Name="updateCourseButton" Text="Update Course" Clicked="updateCourseButton_Clicked"/>
             <Button x:Name="deleteCourseButton" Text="Delete Course" Clicked="deleteCourseButton_Clicked"/>
         </VerticalStackLayout>

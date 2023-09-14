@@ -14,7 +14,7 @@ namespace CourseScheduleMaui
             InitializeComponent();
             associatedAssess = assessmentID;
             Note = note;
-            DisplayAlert("Test", note, "Ok");
+            
         }
 
         private async void sendSMS_Clicked(object sender, EventArgs e)

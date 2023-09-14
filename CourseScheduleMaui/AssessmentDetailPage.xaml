@@ -2,15 +2,23 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CourseScheduleMaui.AssessmentDetailPage">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="All Assessments">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
             Padding="30,0"
             VerticalOptions="Center">
             <Label x:Name="typeLabel" Text="" FontSize="Body"/>
+            <Label Text="Name" />
             <Entry x:Name="assessNameEntry" Placeholder="Assessment Name"/>
+            <Label Text="Description"/>
             <Entry x:Name="assessDescEntry" Placeholder="Description"/>
+            <Label Text="Notes"/>
             <Entry x:Name="notes" Placeholder="Assessment notes"/>
+            <Label Text="Due Date"/>
             <DatePicker x:Name="dueDatePicker"/>
             <Button x:Name="sendNotes" Text="Send Notes" Clicked="sendNotes_Clicked"/>
             <Button x:Name="updateButton" Text="Update Assessment" Clicked="updateButton_Clicked"/>

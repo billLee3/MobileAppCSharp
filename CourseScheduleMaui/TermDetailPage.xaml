@@ -2,7 +2,11 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CourseScheduleMaui.TermDetailPage">
-
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Term Details">
+        </ToolbarItem>
+    </ContentPage.ToolbarItems>
+    
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
@@ -10,7 +14,9 @@
             VerticalOptions="Center">
             <Label Text="Term Name" FontSize="Body"/>
             <Entry x:Name="termNameEntry"/>
+            <Label Text="Start Date"/>
             <DatePicker x:Name="startDate"/>
+            <Label Text="End Date"/>
             <DatePicker x:Name="endDate"/>
 
             <Label Text="Term Courses" FontSize="Body"/>

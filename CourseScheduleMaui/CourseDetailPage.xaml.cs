@@ -102,6 +102,12 @@ namespace CourseScheduleMaui
             }
         }
 
-
+        private void sendNotesSMS_Clicked(object sender, EventArgs e)
+        {
+            if (notesEntry.Text != "")
+            {
+                Navigation.PushAsync(new SMSPage(notesEntry.Text, SelectedCourse.ID));
+            }
+        }
     }
 }
