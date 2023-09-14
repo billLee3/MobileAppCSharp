@@ -64,7 +64,7 @@ namespace CourseScheduleMaui
                 DisplayAlert("Error", "Provide an instructor phone number", "Ok");
                 return false;
             }
-            string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov)$";
+            string regex = @"^[^@\s]+@[^@\s]+\.(com|net|org|gov|edu|io)$";
 
             bool validEmail = Regex.IsMatch(email, regex, RegexOptions.IgnoreCase);
 
