@@ -13,8 +13,10 @@ namespace CourseSchedule.Classes
         public string AssessmentName { get; set; }
         public string Description { get; set; }
         public string Notes { get; set; }
-        public DateTime DueDate { get; set; }
+        public DateTime StartDate { get; set; }
+        public DateTime EndDate { get; set; }
 
+        public bool NotificationsOn { get; set; }
         public int CourseID{ get; set; }
 
         public Assessment()
@@ -22,13 +24,15 @@ namespace CourseSchedule.Classes
 
         }
 
-        public Assessment(string type, string assessmentName, string description, string notes, DateTime dueDate, int courseID)
+        public Assessment(string type, string assessmentName, string description, string notes, DateTime startDate, DateTime endDate, bool notifications, int courseID)
         {
             Type = type;
             AssessmentName = assessmentName;
             Description = description;
-            DueDate = dueDate;
+            StartDate = startDate;
+            EndDate = endDate;
             Notes = notes;
+            NotificationsOn = notifications;
             CourseID = courseID;
         }
 

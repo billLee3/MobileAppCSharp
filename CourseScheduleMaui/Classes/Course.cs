@@ -19,18 +19,20 @@ namespace CourseSchedule.Classes
         public string Notes { get; set; }
         [MaxLength(100)]
         
+
         public int TermID { get; set; }
         public string InstructorName { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
 
+        public bool NotificationsOn { get; set; }
 
 
         public Course()
         {
         }
 
-        public Course(string courseName, DateTime startDate, DateTime endDate, int courseStatus, string details, string notes, int termID, string instructorName, string phoneNum, string email)
+        public Course(string courseName, DateTime startDate, DateTime endDate, int courseStatus, string details, string notes, int termID, string instructorName, string phoneNum, string email, bool notificationsOn)
         {
             CourseName = courseName;
             StartDate = startDate;
@@ -42,6 +44,8 @@ namespace CourseSchedule.Classes
             InstructorName = instructorName;
             PhoneNumber = phoneNum;
             Email = email;
+            NotificationsOn = notificationsOn;
+
         }
     }
 }

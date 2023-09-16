@@ -22,6 +22,14 @@ namespace CourseScheduleMaui
             courseStatusPicker.SelectedIndex = selectedCourse.CourseStatus;
             courseDetailsEntry.Text = selectedCourse.Details;
             notesEntry.Text = selectedCourse.Notes;
+            if (selectedCourse.NotificationsOn == true)
+            {
+                yes.IsChecked = true;
+            }
+            else
+            {
+                no.IsChecked = true;
+            }
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
             {
@@ -47,7 +55,14 @@ namespace CourseScheduleMaui
             SelectedCourse.CourseStatus = courseStatusPicker.SelectedIndex;
             SelectedCourse.Details = courseDetailsEntry.Text;
             SelectedCourse.Notes = notesEntry.Text;
-
+            if(yes.IsChecked == true)
+            {
+                SelectedCourse.NotificationsOn = true;
+            }
+            else
+            {
+                SelectedCourse.NotificationsOn = false;
+            }
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
             {

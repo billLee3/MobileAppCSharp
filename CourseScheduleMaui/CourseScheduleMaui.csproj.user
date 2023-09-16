@@ -7,6 +7,10 @@
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
     <DefaultDevice>pixel_2_xl_pie_9_0_-_api_28</DefaultDevice>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(TargetPlatformIdentifier)'=='iOS'">
+    <RuntimeIdentifier>iossimulator-x64</RuntimeIdentifier>
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
   <ItemGroup>
     <MauiXaml Update="AllAssessPage.xaml">
       <SubType>Designer</SubType>

@@ -20,7 +20,16 @@ namespace CourseScheduleMaui
             assessNameEntry.Text = SelectedAssessment.AssessmentName;
             assessDescEntry.Text = SelectedAssessment.Description;
             notes.Text = SelectedAssessment.Notes;
-            dueDatePicker.Date = SelectedAssessment.DueDate;
+            startDatePicker.Date = SelectedAssessment.StartDate;
+            dueDatePicker.Date = SelectedAssessment.EndDate;
+            if (SelectedAssessment.NotificationsOn == true)
+            {
+                yes.IsChecked = true;
+            }
+            else
+            {
+                no.IsChecked = true;
+            }
 
 
         }
@@ -31,7 +40,16 @@ namespace CourseScheduleMaui
             SelectedAssessment.AssessmentName = assessNameEntry.Text;
             SelectedAssessment.Description = assessDescEntry.Text;
             SelectedAssessment.Notes = notes.Text;
-            SelectedAssessment.DueDate = dueDatePicker.Date;
+            SelectedAssessment.StartDate = startDatePicker.Date;
+            SelectedAssessment.EndDate = dueDatePicker.Date;
+            if (yes.IsChecked)
+            {
+                SelectedAssessment.NotificationsOn = true;
+            }
+            else
+            {
+                SelectedAssessment.NotificationsOn = false;
+            }
 
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))

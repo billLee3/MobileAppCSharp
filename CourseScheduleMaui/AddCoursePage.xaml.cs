@@ -24,19 +24,29 @@ namespace CourseScheduleMaui
 
         private void addCourseButton_Clicked(object sender, EventArgs e)
         {
-
+            Course courseEnd;
             if (IsValidInstructor(instructorEmailEntry.Text))
             {
-                Course course = new Course(courseNameEntry.Text, startDatePicker.Date, endDatePicker.Date, selectedStatus, detailsEntry.Text, notesEntry.Text, termID, instructorEntry.Text, instructorPhoneEntry.Text, instructorEmailEntry.Text);
+                if(yes.IsChecked)
+                {
+                    Course course = new Course(courseNameEntry.Text, startDatePicker.Date, endDatePicker.Date, selectedStatus, detailsEntry.Text, notesEntry.Text, termID, instructorEntry.Text, instructorPhoneEntry.Text, instructorEmailEntry.Text, true);
+                    courseEnd = course;
+                }
+                else
+                {
+                    Course course = new Course(courseNameEntry.Text, startDatePicker.Date, endDatePicker.Date, selectedStatus, detailsEntry.Text, notesEntry.Text, termID, instructorEntry.Text, instructorPhoneEntry.Text, instructorEmailEntry.Text, false);
+                    courseEnd = course;
+                }
+               
 
                 using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
                 {
                     conn.CreateTable<Course>();
-                    conn.Insert(course);
+                    conn.Insert(courseEnd);
 
                 }
 
-                Navigation.PushAsync(new AddAssessPage("Objective", course.ID));
+                Navigation.PushAsync(new AddAssessPage("Objective", courseEnd.ID));
             }
 
 

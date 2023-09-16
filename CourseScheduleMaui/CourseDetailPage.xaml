@@ -41,7 +41,11 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Label Text="Enable Notifications"/>
+            <RadioButton GroupName="NotificationOptions" x:Name="yes" Content="Yes"></RadioButton>
+            <RadioButton GroupName="NotificationOptions" x:Name="no" Content="No"></RadioButton>
             <Button x:Name="sendNotesSMS" Text="Send Notes as SMS" Clicked="sendNotesSMS_Clicked"/>
+            <Button x:Name="setNotifications" Text="Set Notifications" />
             <Button x:Name="updateCourseButton" Text="Update Course" Clicked="updateCourseButton_Clicked"/>
             <Button x:Name="deleteCourseButton" Text="Delete Course" Clicked="deleteCourseButton_Clicked"/>
         </VerticalStackLayout>

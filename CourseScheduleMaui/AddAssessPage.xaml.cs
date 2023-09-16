@@ -27,12 +27,23 @@ namespace CourseScheduleMaui
 
         private void addAssessButton_Clicked(object sender, EventArgs e)
         {
-            Assessment assessment = new Assessment(type, assessNameEntry.Text, assessDescEntry.Text, notesEntry.Text, dueDatePicker.Date, courseID);
+            Assessment finalAssessment;
+            if (yes.IsChecked)
+            {
+                Assessment assessment = new Assessment(type, assessNameEntry.Text, assessDescEntry.Text, notesEntry.Text, startDatePicker.Date, dueDatePicker.Date, true, courseID);
+                finalAssessment = assessment;
+            }
+            else
+            {
+                Assessment assessment = new Assessment(type, assessNameEntry.Text, assessDescEntry.Text, notesEntry.Text, startDatePicker.Date, dueDatePicker.Date, false, courseID);
+                finalAssessment = assessment;
+            }
+            
 
             using (SQLiteConnection conn = new SQLiteConnection(App.DatabaseLocation))
             {
                 conn.CreateTable<Assessment>();
-                conn.Insert(assessment);
+                conn.Insert(finalAssessment);
                 var assessmentTable = conn.Table<Assessment>().ToList();
                 var associatedAssessments = (from assess in assessmentTable
                                              where assess.CourseID == courseID
